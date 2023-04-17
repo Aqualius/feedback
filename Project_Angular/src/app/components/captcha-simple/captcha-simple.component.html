@@ -1,0 +1,7 @@
+<div class="captcha">
+    <div id="user-input" class="custom-field">
+        <input #user_key type="text" (blur)="checkKey()" />
+        <span class="error-message" aria-live="polite">{{error_text}}</span>
+    </div>
+    <div id="image" selectable="False">{{key}}</div>
+</div>

@@ -1,0 +1,6 @@
+<label class="custom-field">
+    <input #data type="text" placeholder="&nbsp;" id="data" value='+7' maxlength="12"
+        (keyup)="onChange($event)" (blur)="onBlurEvent($event)" required/>
+    <span class="placeholder">{{ plh_text }}</span>
+    <span class="error-message" aria-live="polite">{{error_text}}</span>
+</label>

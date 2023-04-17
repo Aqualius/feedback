@@ -1,0 +1,5 @@
+<label class="custom-field">
+    <input type="text" placeholder="&nbsp;" id="data" (blur)="onBlurEvent($event)" (focus)="onFocusEvent($event)" required/>
+    <span class="placeholder">{{ plh_text }}</span>
+    <span class="error-message" aria-live="polite">{{error_text}}</span>
+</label>

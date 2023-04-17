@@ -1,0 +1,8 @@
+<label class="custom-field">
+  <input list="themes" placeholder="&nbsp;" name="theme" (blur)="onBlurEvent($event)" (focus)="onFocusEvent($event)">
+  <span class="placeholder">{{ plh_text }}</span>
+  <datalist id="themes">
+    <option *ngFor="let n of options">{{ n }}</option>
+  </datalist>
+  <span class="error-message" aria-live="polite">{{error_text}}</span>
+</label>

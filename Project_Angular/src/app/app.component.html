@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h1>Напишите нам</h1>
+  <app-inputbox-simple [plh]="'Введите имя'" [plh_focus]="'Имя'" (change_data)="onChangeName($event)" [error_text]="error_name"></app-inputbox-simple>
+  <app-inputbox-simple [plh]="'Введите Email'" [plh_focus]="'Email'" (change_data)="onChangeEmail($event)" [error_text]="error_email"></app-inputbox-simple>
+  <app-inputbox-telephone [plh_text]="'Телефон'" (change_data)="onChangeTel($event)" [error_text]="error_tel"></app-inputbox-telephone>
+  <app-combobox-simple [plh]="'Выберите тему'" [plh_focus]="'Тема'" (change_data)="onChangeTheme($event)" [error_text]="error_theme" [options]="themes"></app-combobox-simple>
+  <app-textarea-simple (change_data)="onChangeMessage($event)" [error_text]="error_message"></app-textarea-simple>
+  <app-captcha-simple (check_captcha)="checkCaptcha($event)" [error_text]="error_captcha"></app-captcha-simple>
+  <button class="btn btn-default" (click)="postData()">Отправить</button>  
+</div>
+
+<!-- MESSAGEBOX -->
+<div #messagebox class="custom-model-main">
+  <div class="custom-model-inner">
+     <div class="close-btn" (click)="hideMessageBox()">×</div>
+     <div class="custom-model-wrap">
+        <div class="pop-up-content-wrap">
+           <h2>Данные успешно отправлены</h2>
+           <p>Ожидайте ответа на электронную почту {{ email_from_request }}.</p>
+        </div>
+     </div>
+  </div>
+  <div class="bg-overlay" (click)="hideMessageBox()"></div>
+</div>
