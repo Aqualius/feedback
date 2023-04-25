@@ -1,13 +1,14 @@
+using Microsoft.Data.SqlClient;
 using System;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 namespace Project.WebApi;
 class DBConnect
 {
-    private static MySqlConnection? connection;
+    private static SqlConnection? connection;
     private string server;
     private string database;
-    private string uid;
-    private string password;
+    //private string uid;
+    //private string password;
 
     //Constructor
     public DBConnect()
@@ -24,17 +25,16 @@ class DBConnect
     //Initialize values
     private void Initialize()
     {
-        server = "localhost";
-        database = "data_feedback";
-        uid = "root";
-        password = "l@DnQWFDs42@";
+        var MyIni = new IniFile("settings.ini");
+        server = MyIni.Read("server_name");
+        database = MyIni.Read("database_name");
         string connectionString;
-        connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+        connectionString = "Data Source=" + server + ";" + "Initial Catalog=" + database + ";Integrated Security=True;TrustServerCertificate=True"; 
 
-        connection = new MySqlConnection(connectionString);
+        connection = new SqlConnection(connectionString);
     }
 
-    public static MySqlConnection? getConn()
+    public static SqlConnection? getConn()
     {
         return connection;
     }
@@ -44,10 +44,13 @@ class DBConnect
     {
         try
         {
-            connection.Open();
+            if (connection.State == System.Data.ConnectionState.Closed)
+            {
+                connection.Open();
+            }
             return true;
         }
-        catch (MySqlException ex)
+        catch (SqlException ex)
         {
             //When handling errors, you can your application's response based on the error number.
             //The two most common error numbers when connecting are as follows:
@@ -75,7 +78,7 @@ class DBConnect
             connection.Close();
             return true;
         }
-        catch (MySqlException ex)
+        catch (SqlException ex)
         {
             //MessageBox.Show(ex.Message);
             return false;

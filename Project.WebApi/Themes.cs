@@ -1,4 +1,5 @@
-using MySql.Data.MySqlClient;
+using Microsoft.Data.SqlClient;
+//using MySql.Data.MySqlClient;
 
 namespace Project.WebApi;
 
@@ -11,12 +12,12 @@ public class Themes
     public Themes()
     {
         List<string> list = new List<string>();
-        MySqlConnection? conn = DBConnect.getConn();
+        SqlConnection? conn = DBConnect.getConn();
 
         string sql = "SELECT DISTINCT name FROM themes ORDER BY name";
-        MySqlCommand command = new MySqlCommand(sql, conn);
+        SqlCommand command = new SqlCommand(sql, conn);
 
-        MySqlDataReader reader = command.ExecuteReader();
+        SqlDataReader reader = command.ExecuteReader();
         while (reader.Read())
         {
             list.Add(reader[0].ToString());

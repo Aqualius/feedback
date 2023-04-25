@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
+using Microsoft.Data.SqlClient;
 using System.Collections.Generic;
 
 namespace Project.WebApi.Controllers;
@@ -24,18 +25,18 @@ public class DataFeedbackController : ControllerBase
     [HttpPost]
     public string? Post(DataFeedback data)
     {
-        MySqlConnection? conn = DBConnect.getConn();
+        SqlConnection? conn = DBConnect.getConn();
 
         int id_contact = 0;
         int id_theme = 0;
         
         // check contact
         string sql = "SELECT id FROM contacts WHERE email = @email AND telephone = @telephone";
-        MySqlCommand command = new MySqlCommand(sql, conn);
+        SqlCommand command = new SqlCommand(sql, conn);
         command.Parameters.AddWithValue("@email", data.Email);
         command.Parameters.AddWithValue("@telephone", data.Telephone);
 
-        MySqlDataReader reader = command.ExecuteReader();
+        SqlDataReader reader = command.ExecuteReader();
         if (reader.Read())
         {
             id_contact = reader.GetInt32(0);
