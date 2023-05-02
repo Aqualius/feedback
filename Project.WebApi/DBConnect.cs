@@ -25,9 +25,11 @@ class DBConnect
     //Initialize values
     private void Initialize()
     {
-        var MyIni = new IniFile("settings.ini");
-        server = MyIni.Read("server_name");
-        database = MyIni.Read("database_name");
+        server = System.Configuration.ConfigurationManager.AppSettings["server_name"];
+        database = System.Configuration.ConfigurationManager.AppSettings["database_name"];
+        //var MyIni = new IniFile("settings.ini");
+        //server = MyIni.Read("server_name");
+        //database = MyIni.Read("database_name");
         string connectionString;
         connectionString = "Data Source=" + server + ";" + "Initial Catalog=" + database + ";Integrated Security=True;TrustServerCertificate=True"; 
 

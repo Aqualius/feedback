@@ -116,17 +116,12 @@ C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое зад�
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\comerr64.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\gssapi64.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\k5sprt64.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\krb5_64.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win-x64\native\krbcc64.dll
-C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
-C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.Project.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.build.Project.WebApi.props
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Project.WebApi.props
@@ -138,3 +133,9 @@ C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое зад�
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\Project.WebApi.csproj.CopyComplete
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\Project.WebApi.genruntimeconfig.cache
 C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\obj\Debug\net7.0\ref\Project.WebApi.dll
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\app.config
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\Project.WebApi.dll.config
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Acer\Desktop\ву\Поиск работы\2023\Тестовое задание СофТраст\feedback\Project.WebApi\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
